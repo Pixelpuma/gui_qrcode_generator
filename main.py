@@ -7,12 +7,13 @@ def create():
     name=inp2.get()
     code=qrcode.make(data)
     type(code)
-    code.save('./your_images/'+name+'.png')
+    code.save(name+'.png')
 
 
 
 window=Tk()
 window.geometry('400x500')
+window.title('Pixelpuma Qrcode Generator')
 
 label=Label(text='Enter the data')
 
